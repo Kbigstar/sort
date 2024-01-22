@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+    <script src="sort.js"></script>
+    <script>
+        let arr = [5,4,3,2,1];
+     
+    </script>
+</head>
+<body>
+    <button onclick="sortSelection()">Selection Sort</button>
+    <button onclick="sortInsertion()">Insertion Sort</button>
+    <button onclick="sortBubble()">Bubble Sort</button>
+
+    
+
+    <script>
+        function sortSelection() {
+            const arr = [5, 4, 3, 2, 1]; // 예시 배열
+            console.log(selectionSort(arr)); // 콘솔에 정렬 결과 출력
+        }
+
+        function sortInsertion() {
+            const arr = [5, 4, 3, 2, 1]; // 예시 배열
+            console.log(insertionSort(arr)); // 콘솔에 정렬 결과 출력
+        }
+
+        function sortBubble() {
+            const arr = [5, 4, 3, 2, 1]; // 예시 배열
+            console.log(bubbleSort(arr)); // 콘솔에 정렬 결과 출력
+        }
+    </script>
+
+</body>
+</html>

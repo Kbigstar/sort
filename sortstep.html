@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting Algorithms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .sort-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p {
+            font-size: 40px; /* 글자 크기를 20px로 설정 */
+            font-weight: bold; /* 글자를 굵게 설정 */
+        }
+    </style>
+
+    <script src="sortstep.js"></script>
+
+</head>
+<body>
+    <div class="sort-section">
+        <p id="selectionOutput"></p>
+        <button onclick="sortSelectionStep()">Selection Sort Step</button>
+    </div>
+
+    <div class="sort-section">
+        <p id="insertionOutput"></p>
+        <button onclick="sortInsertionStep()">Insertion Sort Step</button>
+    </div>
+
+    <div class="sort-section">
+        <p id="bubbleOutput"></p>
+        <button onclick="sortBubbleStep()">bubble Sort Step</button>
+    </div>
+    
+
+
+
+
+    
+
+</body>
+</html>
