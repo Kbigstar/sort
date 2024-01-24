@@ -1,23 +1,19 @@
 function selectionSort(arr) {
-    const swap = (arr, idx1, idx2) => {
-        [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-        let min = i;
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[min] > arr[j]) {
-                min = j;
-            }
+    const len = arr.length;
+    for (let i = 0; i < len - 1; i++) {
+      let minIndex = i;
+      for (let j = i + 1; j < len; j++) {
+        if (arr[j] < arr[minIndex]) {
+          minIndex = j;
         }
-
-        if (arr[min] !== arr[i]) {
-            swap(arr, i, min);
-        }
+      }
+      if (minIndex !== i) {
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+      }
     }
-
     return arr;
-}
+  }
+  
 
   
 function insertionSort(arr) {
